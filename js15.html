@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='ko'>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+	<title>Javascript 3일 차 데이터 값 응용1</title>
+		<script>
+		//CORS발생: 서로 다른 도메인 및 IP가 발생 할 경우
+		//corss-site, corss-domain 
+			 function abc(){
+				//window.opener.reload();
+				//opener.location.reload();	//브모창을 새로고침
+				var z= opener.document.getElementById("mid").value;
+				alert(z);
+				//부모창에 있는 값을 자식창으로 가져오는 사항 (id로 이용)
+			 }
+		</script>
+	</head>
+	<body>
+		<input type="button" value="데이터" onclick="abc();">
+	</body>
+</html>
